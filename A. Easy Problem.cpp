@@ -1,24 +1,28 @@
 // A. Easy Problem
-#include <iostream>
-#include <string >
-#include <algorithm>
-#include <cmath>
-#include <stack>
-#include <vector>
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
 
-
+void solve()
+{
+    string A;
+    cin >> A;
+    cout << "Yes\n";
+}
 int main()
 {
-    int t  ;              cin >> t ;
-    int a ;          // (a , b) ;
-    while(t--)
-    {
-        cin >> a ;
-       cout << a - 1 << endl;
+    fast;
 
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
     }
-    
 
     return 0;
 }
