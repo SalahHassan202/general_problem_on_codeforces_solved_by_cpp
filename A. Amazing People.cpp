@@ -13,25 +13,15 @@ void solve()
     ll n;
     cin >> n;
     if (n > 0 && n <= 5)
-    {
-        cout << "Languages" << endl;
-    }
+    cout << "Languages" << endl;
     else if (n == 6 || n == 7)
-    {
-        cout << "Read and Write" << endl;
-    }
+    cout << "Read and Write" << endl;
     else if (n >= 8 && n <= 12)
-    {
-        cout << "Robotics" << endl;
-    }
+    cout << "Robotics" << endl;
     else if (n >= 13 && n <= 19)
-    {
-        cout << "Programming and Robotics" << endl;
-    }
+    cout << "Programming and Robotics" << endl;
     else
-    {
-        cout << "Read about everything" << endl;
-    }
+    cout << "Read about everything" << endl;
 }
 
 int main()
