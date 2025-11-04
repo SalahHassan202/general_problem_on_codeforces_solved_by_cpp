@@ -1,50 +1,67 @@
 // G - Extra: Abnormal Words
-#include <iostream>
-#include <string>
-#include <algorithm>
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
-int main()
+
+void solve()
 {
-    char letter ;             cin >>letter ;
-    int shift ;               cin >> shift ;
-    string word ;             cin >> word ;
+    // l ===> letter ,,, w ==> word ,,, s ==> shift
+    char l ;             cin >>l ;
+    int s ;               cin >> s ;
+    string w ;             cin >> w ;
     // A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T  U  V  W  X  Y  Z 
-     for(int i = 0 ; i< word.size() ; i++)
+     for(int i = 0 ; i< w.size() ; i++)
     {
-        if(letter == 'E')         // encode 
+        if(l == 'E')         // encode 
         {
-            for( int j = 0 ; j < shift ; j++)
+            for( int j = 0 ; j < s ; j++)
             {
-                if(word[i] == 'z')
+                if(w[i] == 'z')
                 {
-                    word[i] = 'a' ;
+                    w[i] = 'a' ;
                 }
                 else
                 {
-                    word[i]++;
+                    w[i]++;
                 }
             }
         }
         else // (letter == 'D)     // decode 
         {
-             for( int j = 0 ; j < shift ; j++)
+             for( int j = 0 ; j < s ; j++)
             {
-                if(word[i] == 'a')
+                if(w[i] == 'a')
                 {
-                    word[i] = 'z' ;
+                    w[i] = 'z' ;
                 }
                 else
                 {
-                    word[i]--;
+                    w[i]--;
                 }
             }
         }
         
     }
 
-    cout<< word << endl;
+    cout<< w << endl;
 
-  
+}
+
+int main()
+{
+    fast;
+
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+
     return 0;
 }
 
@@ -84,5 +101,6 @@ z	122	01111010	Z	090	01011010
 
 
 */
+
 
 
