@@ -1,20 +1,31 @@
-// A. A+B?
-#include <iostream>
-#include <string>
-#include <algorithm>
-#include <cmath>
+//  A. A+B?
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
-int main()
+
+void solve()
 {
-    
-   long long t ;                   cin >> t ;
+    ll t ;                   cin >> t ;
    while(t--)
    {
-        long long num1 , num2 ;
-        char sign = '+' ;
-        cin>> num1 >> sign >> num2 ;
-        cout << num1+num2 << endl;
+        ll n1 , n2 ;
+        char s = '+' ;
+        cin>> n1 >> s >> n2 ;
+        cout << n1+n2 << endl;
    }
-    
-    return 0 ;
+
+}
+
+int main()
+{
+    fast;
+    solve();
+
+
+    return 0;
 }
