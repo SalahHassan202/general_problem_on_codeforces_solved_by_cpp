@@ -9,7 +9,6 @@ void solve()
     cin >> m >> n ;
     ll res = (m*n)/2 ; 
     cout<< res<< endl;
-
 }
 int main()
 {
@@ -23,6 +22,5 @@ int main()
         solve();
     }
   
-    
     return 0 ;
 }
