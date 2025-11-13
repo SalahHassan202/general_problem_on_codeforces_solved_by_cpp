@@ -1,13 +1,14 @@
 // A. Dragons
-#include <iostream>
-#include <string >
-#include <algorithm>
-#include <cmath>
-#include <vector>
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
-int main ()
+
+void solve()
 {
-    
     /*
 
     first input
@@ -135,14 +136,20 @@ int main ()
     }
 
     if(ok == 1)
-    {
-        cout<<"YES" <<endl;
-    }
+    cout<<"YES" <<endl;
     else
+    cout<< "NO" << endl;
+}
+
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t ;
+    while (t--)
     {
-        cout<< "NO" << endl;
+        solve(); 
     }
 
-
-    return 0 ;
+    return 0;
 }
