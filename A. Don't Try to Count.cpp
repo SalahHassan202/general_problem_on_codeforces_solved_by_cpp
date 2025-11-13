@@ -1,18 +1,22 @@
 // A. Don't Try to Count
-#include <iostream>
-#include <string>
-#include<algorithm>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
 
-int main()
+void solve()
 {
-    int testCases;
-    cin>>testCases;
+        int t;
+    cin>>t;
 
-    while(testCases--)
+    while(t--)
     {
-        int num1,num2;
-        cin>>num1>>num2;
+        int n1,n2;
+        cin>>n1>>n2;
         string s1,s2;
         cin>>s1>>s2;
         
@@ -33,8 +37,15 @@ int main()
         }
     }
 
-    
-   return 0 ;
+}
+
+int main()
+{
+    fast;
+   
+    solve(); 
+
+    return 0;
 }
 
 
