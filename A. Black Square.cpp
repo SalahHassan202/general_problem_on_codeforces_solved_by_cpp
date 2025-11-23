@@ -1,14 +1,15 @@
 // A. Black Square
-#include<iostream>
-#include<string>
-#include <cmath>
-#include<algorithm>
-using namespace std; 
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
 
-int main()
+void solve()
 {
-	
-	/*
+    /*
 	give you four squares if you click on any square you lose point 
 	he wants you to calculate the points that you lose 
 	==========================================
@@ -65,10 +66,16 @@ int main()
 
 	cout<< sum << endl;
 
-
-
-	return 0;
+   
 }
-
-
-
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
+}
