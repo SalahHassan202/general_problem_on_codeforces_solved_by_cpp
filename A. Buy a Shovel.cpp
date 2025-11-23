@@ -1,13 +1,16 @@
 // A. Buy a Shovel
-#include<iostream>
-#include<string>
-#include <cmath>
-#include<algorithm>
-using namespace std; 
 
-int main()
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
 {
-	/*
+    	/*
 	11 3 
 	-----------------
 	i have an ulimated coin of 10 ===> 10 , 10 , 10 , 10 , 10 , 10 , 10 , 10 , 10 , 10 , 10 ,......etc 
@@ -37,9 +40,16 @@ int main()
 
 	cout<< counter << endl;
 
-
-	return 0;
+   
 }
-
-
-
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
+}
