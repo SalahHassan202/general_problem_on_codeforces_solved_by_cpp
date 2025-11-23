@@ -10,7 +10,7 @@ using namespace std;
 
 void solve()
 {
-    	/*
+    /*
 	11 3 
 	-----------------
 	i have an ulimated coin of 10 ===> 10 , 10 , 10 , 10 , 10 , 10 , 10 , 10 , 10 , 10 , 10 ,......etc 
@@ -53,3 +53,4 @@ int main()
     }
     return 0;
 }
+
