@@ -10,8 +10,7 @@ using namespace std;
 
 void solve()
 {
-    ll t;
-    cin >> t;
+    ll t;                cin >> t;
     ll x = 0;
     while (t--)
     {
