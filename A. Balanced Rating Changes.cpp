@@ -1,17 +1,18 @@
 // A. Balanced Rating Changes
-#include <iostream>
-#include <string>
-#include <iomanip>                                  //  setprecision()
-#include <algorithm> 
-#include <cmath>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
 
-int main()
+void solve()
 {
-   
-    long long size ;             // number of people or participants
+    ll size ;             // number of people or participants
     cin >> size ;
-    long long arr[size] ;
+    ll arr[size] ;
 
     for(int i = 0 ; i < size ; i++)
     {
@@ -47,7 +48,16 @@ int main()
     {
         cout << arr[i] << endl;
     }
-
    
-    return 0 ;
+}
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
 }
