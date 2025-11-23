@@ -1,10 +1,14 @@
 // A. Arpa’s hard exam and Mehrdad’s naive cheat
-#include <iostream>
-# include <string >
-#include <algorithm>
-#include <cmath>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
-int main ()
+
+void solve()
 {
     /*
     the idea of solution is ....
@@ -48,18 +52,14 @@ int main ()
     3 % 4 = 3
     4 % 4 = 0
     ======================================
-
-    
-    
-    
     
     */
 
-    long long n ;              cin >> n ;         // n  ====>  any number
+    ll n ;              cin >> n ;         // n  ====>  any number
     if(n == 0)
     {
         cout<< 1 << endl;
-        return 0 ; 
+        return  ; 
     }
 
     if(n % 4 == 0)
@@ -79,6 +79,15 @@ int main ()
         cout<< 2 << endl;
     }
    
-
-    return 0 ;
+}
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
 }
