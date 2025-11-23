@@ -1,11 +1,14 @@
 // A. Anton and Letters
-#include <iostream>
-#include <string >
-#include <algorithm>
-#include <cmath>
-#include <set>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
-int main()
+
+void solve()
 {
 	string s1 ;             
 	getline(cin , s1) ; // to get the string if the string exisit a spaces ;
@@ -21,6 +24,15 @@ int main()
 	}
 
 	cout<< letters.size() << endl;
-
+}
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
     return 0;
 }
