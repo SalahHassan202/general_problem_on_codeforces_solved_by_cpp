@@ -1,4 +1,5 @@
 // A. Blackboard Game
+
 #include <bits/stdc++.h>
 #define ll long long
 #define fast                     \
