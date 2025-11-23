@@ -9,8 +9,7 @@ using namespace std;
 
 void solve()
 {
-    ll n;
-    cin >> n;
+    ll n;                cin >> n;
     cout << (n % 4 ? "Alice" : "Bob") << '\n';
 }
 int main()
