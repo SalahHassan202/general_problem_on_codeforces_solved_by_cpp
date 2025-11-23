@@ -1,11 +1,14 @@
 // A. Beautiful Matrix
-#include <iostream>
-#include <string>
-#include <algorithm>
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
-int main()
+
+void solve()
 {
-    
     int num , moves = 0 ;
     for(int i = 1 ; i <= 5 ; i++)
     {
@@ -21,6 +24,16 @@ int main()
     }
 
     cout<< moves << endl;
-  
+   
+}
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
     return 0;
 }
