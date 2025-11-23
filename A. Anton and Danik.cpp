@@ -1,18 +1,20 @@
 // A. Anton and Danik
-#include <iostream>
-#include <cmath>
-#include <algorithm>
-#include <string>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
 
-int main ()
+void solve()
 {
-   
-    long long games ;
+    ll games ;
     cin >> games ;
     string name ;
     cin>> name ;
-    long long counterA = 0 , counterD = 0 ;
+    ll counterA = 0 , counterD = 0 ;
 
     for(int i = 0 ; i< name.size() ; i++)
     {
@@ -38,7 +40,15 @@ int main ()
     {
         cout<<"Friendship"<<endl;
     }
-   
-   
+}
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
     return 0;
 }
