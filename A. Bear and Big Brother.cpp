@@ -1,12 +1,15 @@
 // A. Bear and Big Brother 
-#include<iostream>
-#include<string>
-#include<algorithm>
-using namespace std; 
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
 
-int main()
+void solve()
 {
-	int num1 , num2 , counter = 0 ;          //  Bear and Big Brother (Bob)
+    int num1 , num2 , counter = 0 ;          //  Bear and Big Brother (Bob)
 	cin>> num1 >> num2 ;
 	while(num1 <= num2)
 	{
@@ -16,6 +19,16 @@ int main()
 	}
 
 	cout<< counter <<endl;
-
-	return 0;
+   
+}
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
 }
