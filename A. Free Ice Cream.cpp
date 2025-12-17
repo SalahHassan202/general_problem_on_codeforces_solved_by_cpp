@@ -1,19 +1,23 @@
 // A. Free Ice Cream
-#include <iostream>
-#include <string>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
-int main()
-{
 
-
-    long long cases , iceCream ;
+void solve()
+{	
+   ll cases , iceCream ;
 	cin >> cases >> iceCream ;
 
-	long long counter = 0 ;
+	ll counter = 0 ;
 
 	for (int i =0 ; i < cases ; i++)
 	{
-		char oper;      long long num ;
+		char oper;      ll num ;
 		cin >> oper >> num ;
 
 		if( oper == '+')
@@ -35,5 +39,13 @@ int main()
 	cout<< iceCream <<" "<< counter << endl;
 
 
-    return 0 ;
+}
+
+int main()
+{
+    fast;
+
+    solve();
+
+    return 0;
 }
