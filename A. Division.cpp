@@ -1,14 +1,17 @@
 // A. Division?
-#include <iostream>
-#include <cmath>
-#include <algorithm>
-#include <string>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
 
-int main ()
+void solve()
 {
-   long long t ;           cin >> t ; 
-   long long rate ;
+    ll t ;           cin >> t ; 
+   ll rate ;
    while(t--)
    {
         cin >> rate ;
@@ -30,6 +33,14 @@ int main ()
             cout<<"Division 1" <<endl;
         }
    }
+
+}
+
+int main()
+{
+    fast;
+
+    solve();
 
     return 0;
 }
