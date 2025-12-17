@@ -1,13 +1,16 @@
 // A. Games
-#include<iostream>
-#include<string>
-#include <cmath>
-#include<algorithm>
-using namespace std; 
 
-int main()
-{
-	int number_of_teams , counter = 0 ;             cin >> number_of_teams ;
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
+{	
+   	int number_of_teams , counter = 0 ;             cin >> number_of_teams ;
 	int arr1[number_of_teams] ;
 	int arr2[number_of_teams] ;
 
@@ -30,7 +33,16 @@ int main()
 
 	cout<< counter << endl; 
 
-	return 0;
+
+}
+
+int main()
+{
+    fast;
+
+    solve();
+
+    return 0;
 }
 
 
