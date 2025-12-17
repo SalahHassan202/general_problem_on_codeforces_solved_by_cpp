@@ -35,10 +35,11 @@ int main()
 {
     fast;
     ll t = 1;
-    cin >> t;
+   // cin >> t;
     while (t--)
     {
         solve();
     }
     return 0;
 }
+
