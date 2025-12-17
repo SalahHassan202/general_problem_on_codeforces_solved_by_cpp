@@ -1,13 +1,16 @@
 // A. Carrot Cakes
-#include <iostream>
-#include <string >
-#include <algorithm>
-#include <cmath>
-using namespace std;
-int main()
-{
 
-	int n , t , k , d ;      
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
+{
+    	int n , t , k , d ;      
 	// n ====> the number of cakes needed, 
 	// t ====> the time needed for one oven to bake k cakes,
 	// k ====> the number of cakes baked at the same time,
@@ -26,6 +29,16 @@ int main()
 		cout<<"NO"<<endl;
 	}
 
+}
 
+int main()
+{
+    fast;
+    ll t = 1;
+    cin >> t;
+    while (t--)
+    {
+        solve();
+    }
     return 0;
 }
