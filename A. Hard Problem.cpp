@@ -1,4 +1,5 @@
 // A. Hard Problem
+
 #include <bits/stdc++.h>
 #define ll long long
 #define fast                     \
@@ -9,7 +10,6 @@ using namespace std;
 
 void solve()
 {
-
     ll n, m;
     cin >> n >> m;
     if ((n * 2 == m) || (m * 2 == n))
@@ -21,7 +21,6 @@ void solve()
 int main()
 {
     fast;
-
     ll t = 1;
     // cin >> t;
     while (t--)
