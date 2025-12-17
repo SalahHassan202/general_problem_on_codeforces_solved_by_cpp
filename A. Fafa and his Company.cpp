@@ -1,12 +1,15 @@
 // A. Fafa and his Company
-#include <iostream>
-#include <string>
-#include <iomanip>                                //  setprecision()
-#include <algorithm> 
-#include <cmath>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
-int main()
-{
+
+void solve()
+{	
     int num ;              // the number of employees
     cin >> num ; 
     int result = 0 ;
@@ -21,5 +24,13 @@ int main()
     cout << result << endl;
 	
 
-    return 0 ;
+}
+
+int main()
+{
+    fast;
+
+    solve();
+
+    return 0;
 }
