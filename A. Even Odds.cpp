@@ -1,11 +1,15 @@
 // A. Even Odds
-#include <iostream>
-#include <string>
-#include <algorithm>
-#include <cmath>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
-int main()
-{
+
+void solve()
+{	
     /*
     first case 
     Input:
@@ -33,7 +37,7 @@ int main()
     
     */
 
-   long long number , position ;
+   ll number , position ;
    cin >> number >> position ;
 
      // If position is less than or equal to number/2, it is odd part of the sequence
@@ -53,5 +57,13 @@ int main()
         // 1 3 5 7 9 2 4 6 8       ===> odd  ===> position = 6    ===> 3 * 2 - 1 == 5    (true ) == output
     }
 
-    return 0 ;
+}
+
+int main()
+{
+    fast;
+
+    solve();
+
+    return 0;
 }
