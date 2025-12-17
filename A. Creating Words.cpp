@@ -1,9 +1,17 @@
 // A. Creating Words
-# include <iostream>
-using namespace std ;
-int main()
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
 {
-    long long t ;       cin >> t ;
+    
+    ll t ;       cin >> t ;
     string a , b ;
 
     while(t--)
@@ -14,5 +22,16 @@ int main()
         
     }
 
-    return  0 ; 
+}
+
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
 }
