@@ -10,9 +10,7 @@ using namespace std;
 
 void solve()
 {
-    ll a, b;
-    cin >> a >> b;
-
+    ll a, b;             cin >> a >> b;
     ll x = a % b;
     if (x == 0)
         cout << 0 << endl;
