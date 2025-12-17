@@ -1,12 +1,16 @@
 // A. Fox And Snake
-#include<iostream>
-#include<string>
-#include<algorithm>
-using namespace std; 
-int main()
-{
 
-	/*
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
+{	
+    	/*
 	
 	       **************** snake ********************* 
 	###         
@@ -52,6 +56,13 @@ int main()
 	}
 
 
+}
 
-	return 0;
+int main()
+{
+    fast;
+
+    solve();
+
+    return 0;
 }
