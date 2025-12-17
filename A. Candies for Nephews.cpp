@@ -7,18 +7,16 @@ using namespace std ;
 
 void solve()
 {
-    ll n  ;  cin >> n  ;
+    ll n  ;             cin >> n  ;
     ll r = n % 3 ;
     if( r == 0)
     cout << 0 << endl;
     else
     cout << 3-r<< endl;
-    
 }
 int main()
 {
     fast;
-    
     ll t = 1 ;
     // cin >> t ;
     while(t--)
