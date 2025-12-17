@@ -1,15 +1,21 @@
 // A. Game with Integers
-#include<iostream>
-#include<string>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
-int main()
-{
-	int num , cases;        cin>>cases;
-	while(cases--)
+
+void solve()
+{	
+    int n , t;        cin>>t;
+	while(t--)
 	{
-		cin>>num ;
+		cin>>n ;
 		
-		if(num % 3 ==0 )
+		if(n % 3 ==0 )
 		{
 			cout<<"Second"<<endl;
 		}
@@ -19,6 +25,13 @@ int main()
 		}
 	}
 
-	
-	return 0;
+}
+
+int main()
+{
+    fast;
+
+    solve();
+
+    return 0;
 }
