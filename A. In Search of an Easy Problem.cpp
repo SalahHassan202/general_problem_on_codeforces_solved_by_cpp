@@ -6,33 +6,21 @@
     ios::sync_with_stdio(false); \
     cin.tie(0);                  \
     cout.tie(0);
+
 using namespace std;
 
 void solve()
 {
-    ll n, x;
-    cin >> n;
-    bool ok = false;
-    for (int i = 0; i < n; i++)
-    {
-        cin >> x;
-        if (x == 1)
-        {
-            ok = true;
-        }
-    }
-    cout << (ok ? "HARD" : "EASY");
+    string s;
+    cin >> s;
+    cout << "Mohamed Salah";
 }
+
 int main()
 {
     fast;
 
-    ll t = 1;
-    // cin >> t;
-    while (t--)
-    {
-        solve();
-    }
+    solve();
 
     return 0;
 }
