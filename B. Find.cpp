@@ -19,7 +19,7 @@ void solve()
         if (a[i] == k)
         {
             cout << i;
-            break;
+            return ;
         }
     }
     cout << "Not Found";
