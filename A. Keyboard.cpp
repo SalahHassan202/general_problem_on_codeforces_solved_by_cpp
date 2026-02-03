@@ -1,10 +1,14 @@
 // A. Keyboard
-#include <iostream>
-# include <string >
-#include <algorithm>
-#include <cmath>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
-int main ()
+
+void solve()
 {
     /*
 
@@ -45,7 +49,13 @@ int main ()
    }
    
     cout<< finalResult <<endl;
+}
 
+int main()
+{
+    fast;
 
-    return 0 ;
+    solve();
+
+    return 0;
 }
