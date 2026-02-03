@@ -1,9 +1,14 @@
 // A. Hulk
-#include <iostream>
-# include <string >
-#include <algorithm>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
-int main ()
+
+void solve()
 {
     int num ; 
     cin >> num ;
@@ -24,5 +29,13 @@ int main ()
 
     cout << feeling << " it" << endl ;
 
-    return 0 ;
+}
+
+int main()
+{
+    fast;
+
+    solve();
+
+    return 0;
 }
