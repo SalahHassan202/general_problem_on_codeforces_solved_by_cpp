@@ -1,10 +1,14 @@
 // A. Ksenia and Pan Scales
-#include <iostream>
-# include <string >
-#include <algorithm>
-#include <cmath>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
-int main ()
+
+void solve()
 {
     /* 
     the idea of the problem
@@ -47,7 +51,7 @@ int main ()
    cin >> task ;
 
   
-    for (auto pointer : task)  // 
+    for (auto pointer : task)  
     {
         if (left.size() <= right.size())
         {
@@ -88,5 +92,13 @@ int main ()
 
     */
 
-    return 0 ;
+}
+
+int main()
+{
+    fast;
+
+    solve();
+
+    return 0;
 }
