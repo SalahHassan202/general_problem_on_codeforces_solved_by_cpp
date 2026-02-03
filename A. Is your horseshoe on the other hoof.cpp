@@ -1,11 +1,14 @@
 // A. Is your horseshoe on the other hoof?
-#include<iostream>
-#include<string>
-#include <cmath>
-#include<algorithm>
-using namespace std; 
 
-int main()
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
 {
 	// int horse1 , horse2 , horse3 , horse4 ; 
 	// cin >> horse1 >> horse2 >> horse3 >> horse4 ;
@@ -28,11 +31,17 @@ int main()
 
 	cout << counter << endl;
 
-
-
-
-	return 0;
 }
+
+int main()
+{
+    fast;
+
+    solve();
+
+    return 0;
+}
+
 
 
 
