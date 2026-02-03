@@ -1,11 +1,14 @@
 // A. Launch of Collider
-#include <iostream>
-#include <string>
-#include <iomanip>                                //  setprecision()
-#include <algorithm> 
-#include <cmath>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
-int main()
+
+void solve()
 {
         /*
         4
@@ -53,10 +56,10 @@ int main()
         
         */
 
-        long long size ;                       cin >> size ;
+        ll size ;                       cin >> size ;
         string sequance ;                      cin >> sequance ; 
-        long long arr[size] ; 
-        long long time = 0 , minTime = 100000000000;
+        ll arr[size] ; 
+        ll time = 0 , minTime = 100000000000;
         for(int i = 0 ; i < size ; i++)
         {
             cin >> arr[i] ;
@@ -84,5 +87,14 @@ int main()
         {
             cout << minTime << endl;
         }
-    return 0 ;
+
+}
+
+int main()
+{
+    fast;
+
+    solve();
+
+    return 0;
 }
