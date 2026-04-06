@@ -10,30 +10,28 @@ using namespace std;
 
 void solve()
 {
-    ll n, x;
-    cin >> n >> x;
-    vector<ll> v(n + 1, 0);
+    ll n, x;           cin >> n >> x ;
+    vector<ll> vt(n + 1, 0) ;
     for (ll i = 0; i < n - 1; i++)
     {
-        ll a, b;
-        cin >> a >> b;
-        v[a]++;
-        v[b]++;
+        ll u, v ;              cin >> u >> v ;
+        vt[u]++;
+        vt[v]++;
     }
 
-    if (v[x] <= 1)
+    if (vt[x] <= 1)
     {
-        cout << "Ayush" << endl;
+        cout << "Ayush" << endl ;
     }
     else
     {
-        if (n % 2 == 1)
+        if (n % 2 == 0)
         {
-            cout << "Ayush" << endl;
+            cout << "Ayush" << endl ;
         }
         else
         {
-            cout << "Ashish" << endl;
+            cout << "Ashish" << endl ;
         }
     }
 }
@@ -42,12 +40,12 @@ int main()
 {
     fast;
 
-    ll t;
-    cin >> t;
+    ll t;            cin >> t;
     while (t--)
     {
         solve();
     }
+
 
     return 0;
 }
