@@ -1,4 +1,5 @@
 // A. I Wanna Be the Guy
+
 #include <bits/stdc++.h>
 #define ll long long
 #define fast                     \
@@ -21,6 +22,7 @@ void solve()
         cin >> x;
         lvl.insert(x);
     }
+    
     ll q;
     cin >> q;
     for (int i = 0; i < q; i++)
@@ -29,6 +31,7 @@ void solve()
         cin >> x;
         lvl.insert(x);
     }
+    
     if (lvl.size() == n)
         cout << "I become the guy.";
     else
