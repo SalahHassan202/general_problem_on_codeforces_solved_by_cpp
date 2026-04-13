@@ -11,11 +11,9 @@ using namespace std;
 void solve()
 {
 
-    ll n;
-    cin >> n;
+    ll n;            cin >> n;
     set<ll> lvl;
-    ll p;
-    cin >> p;
+    ll p;            cin >> p;
     for (int i = 0; i < p; i++)
     {
         ll x;
@@ -23,12 +21,10 @@ void solve()
         lvl.insert(x);
     }
     
-    ll q;
-    cin >> q;
+    ll q;               cin >> q;
     for (int i = 0; i < q; i++)
     {
-        ll x;
-        cin >> x;
+        ll x;                  cin >> x;
         lvl.insert(x);
     }
     
