@@ -10,8 +10,7 @@ using namespace std;
 
 void solve()
 {
-    ll n;
-    cin >> n;
+    ll n;             cin >> n;
     vector<vector<ll>> v1(n + 1);
     for (ll i = 2; i <= n; i++)
     {
@@ -47,8 +46,10 @@ void solve()
 int main()
 {
     fast;
+    
 
     solve();
+    
 
     return 0;
 }
