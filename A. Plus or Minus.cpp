@@ -1,11 +1,12 @@
 // A. Plus or Minus
+
 #include<iostream>
 #include<string>
 #include<algorithm>
 using namespace std;
 int main()
 {
-   int testCases;              cin >> testCases ;
+   int t;              cin >> t ;
    int a , b , c ;     // three numbers 
    while(testCases--)
    {
