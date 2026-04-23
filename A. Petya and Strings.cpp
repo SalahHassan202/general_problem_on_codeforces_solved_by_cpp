@@ -1,4 +1,5 @@
 // A. Petya and Strings
+
 #include<iostream>
 #include<string>
 #include <cmath>
@@ -26,7 +27,6 @@ int main()
 		}
 		
 	}
-
 	cout<< 0 << endl;
 	
 /*
@@ -41,8 +41,6 @@ tolower()       ===>  convert  the string to lower case
 toupper()       ===>  convert  the string to upper case 
 ==============================================================
 */
-
-
 
 	return 0;
 }
