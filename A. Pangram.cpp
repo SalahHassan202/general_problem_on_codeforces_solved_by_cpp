@@ -1,4 +1,5 @@
 // A. Pangram
+
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -6,9 +7,7 @@
 using namespace std;
 int main()
 {
-
     /*
-
     all letter in english ::
     abcdefghijklmnopqrstuvwxyz
     ===============================
@@ -34,7 +33,6 @@ int main()
     then sort it 
     if all string contain letter from a to z 
     print yes 
-
     */
 
     long long size ;               cin >> size ;
@@ -54,7 +52,6 @@ int main()
 
     for (int i = 0 ; i < size ; i++ )
     {
-
         if(word[i] != word[i + 1])
         {
             counter++ ; 
@@ -69,7 +66,6 @@ int main()
     {
         cout<<"NO"<<endl;
     }
-
 
     return 0 ;
 }
