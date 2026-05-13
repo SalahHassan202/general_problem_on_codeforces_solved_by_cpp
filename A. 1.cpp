@@ -8,27 +8,79 @@
     cout.tie(0);
 using namespace std;
 
-ll n, ans;
-void salah(ll x)
+const int N = 10005;
+ll t[11][N];
+ll a[N], n, m;
+
+void salah(ll f, ll g, ll v)
 {
-    if (x > n)
+    while (g <= n)
     {
-        return;
+        t[f][g] += v;
+        g += g & -g;
     }
-    if (x > 0)
+}
+
+ll sum(ll f, ll g)
+{
+    ll ans = 0;
+    while (g > 0)
     {
-        ans++;
+        ans += t[f][g];
+        g -= g & -g;
     }
-    salah(x * 10);
-    salah(x * 10 + 1);
+    return ans;
+}
+
+ll hassan(ll f, ll l, ll r)
+{
+    return sum(f, r) - sum(f, l - 1);
 }
 
 void solve()
 {
-    cin >> n;
-    ans = 0;
-    salah(1);
-    cout << ans << endl;
+    cin >> n >> m;
+    for (ll i = 1; i <= n; i++)
+    {
+        cin >> a[i];
+
+        salah(a[i] % m, i, a[i]);
+    }
+
+    ll q;
+    cin >> q;
+    while (q--)
+    {
+        char c;
+        cin >> c;
+        if (c == 's')
+        {
+            ll l, r, o;
+            cin >> l >> r >> o;
+            cout << hassan(o, l, r) << endl;
+        }
+        else if (c == '+')
+        {
+            ll p, r;
+            cin >> p >> r;
+            salah(a[p] % m, p, -a[p]);
+            a[p] += r;
+            salah(a[p] % m, p, a[p]);
+            cout << a[p] << endl;
+        }
+        else
+        {
+            ll p, r;
+            cin >> p >> r;
+            salah(a[p] % m, p, -a[p]);
+            if (a[p] >= r)
+            {
+                a[p] -= r;
+            }
+            salah(a[p] % m, p, a[p]);
+            cout << a[p] << endl;
+        }
+    }
 }
 
 int main()
