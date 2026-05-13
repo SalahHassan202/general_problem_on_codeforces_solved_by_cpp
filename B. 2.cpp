@@ -8,44 +8,53 @@
     cout.tie(0);
 using namespace std;
 
-vector<ll> v;
-void salah(ll x)
+const ll N = 1000005;
+ll b[N];
+void salah(ll g, ll v)
 {
-    if (x > 1e10)
+    while (g < N)
     {
-        return;
+        b[g] += v;
+        g += g & -g;
     }
-    if (x > 0)
+}
+
+ll hassan(ll g)
+{
+    ll ans = 0;
+    while (g > 0)
     {
-        v.push_back(x);
+        ans += b[g];
+        g -= g & -g;
     }
-    salah(x * 10 + 4);
-    salah(x * 10 + 7);
+    return ans;
 }
 
 void solve()
 {
-    ll l, r;
-    cin >> l >> r;
-    v.clear();
-    salah(0);
-    sort(v.begin(), v.end());
-    ll c = l, ans = 0;
-    for (ll x : v)
+    ll n;
+    cin >> n;
+    vector<ll> a(n + 1), l(n + 1), r(n + 1);
+    map<ll, ll> mp;
+    for (ll i = 1; i <= n; i++)
     {
-        if (x < c)
-        {
-            continue;
-        }
-
-        ll f = min(r, x);
-        ans += (f - c + 1) * x;
-        c = f + 1;
-        if (c > r)
-        {
-            break;
-        }
+        cin >> a[i];
+        mp[a[i]]++;
+        l[i] = mp[a[i]];
     }
+    mp.clear();
+    for (ll i = n; i >= 1; i--)
+    {
+        mp[a[i]]++;
+        r[i] = mp[a[i]];
+    }
+    ll ans = 0;
+    for (ll i = n; i >= 1; i--)
+    {
+        ans += hassan(l[i] - 1);
+        salah(r[i], 1);
+    }
+
     cout << ans << endl;
 }
 
