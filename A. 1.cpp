@@ -8,86 +8,67 @@
     cout.tie(0);
 using namespace std;
 
-const int N = 10005;
-ll t[11][N];
-ll a[N], n, m;
-
-void salah(ll f, ll g, ll v)
+struct Salah
 {
-    while (g <= n)
+    vector<ll> z;
+    ll n;
+    Salah(ll size)
     {
-        t[f][g] += v;
-        g += g & -g;
+        n = size;
+        z.assign(n + 1, 0);
     }
-}
 
-ll sum(ll f, ll g)
-{
-    ll ans = 0;
-    while (g > 0)
+    void add(ll d, ll g)
     {
-        ans += t[f][g];
-        g -= g & -g;
+        while (d <= n)
+        {
+            z[d] += g;
+            d += d & -d;
+        }
     }
-    return ans;
-}
 
-ll hassan(ll f, ll l, ll r)
-{
-    return sum(f, r) - sum(f, l - 1);
-}
+    ll sum(ll d)
+    {
+        ll s = 0;
+        while (d > 0)
+        {
+            s += z[d];
+            d -= d & -d;
+        }
+        return s;
+    }
+};
 
 void solve()
 {
-    cin >> n >> m;
+    ll n;
+    cin >> n;
+    vector<ll> v(n + 1);
     for (ll i = 1; i <= n; i++)
     {
-        cin >> a[i];
-
-        salah(a[i] % m, i, a[i]);
+        cin >> v[i];
     }
 
-    ll q;
-    cin >> q;
-    while (q--)
+    Salah r(n);
+    ll s = 0;
+    for (ll i = 1; i <= n; i++)
     {
-        char c;
-        cin >> c;
-        if (c == 's')
-        {
-            ll l, r, o;
-            cin >> l >> r >> o;
-            cout << hassan(o, l, r) << endl;
-        }
-        else if (c == '+')
-        {
-            ll p, r;
-            cin >> p >> r;
-            salah(a[p] % m, p, -a[p]);
-            a[p] += r;
-            salah(a[p] % m, p, a[p]);
-            cout << a[p] << endl;
-        }
-        else
-        {
-            ll p, r;
-            cin >> p >> r;
-            salah(a[p] % m, p, -a[p]);
-            if (a[p] >= r)
-            {
-                a[p] -= r;
-            }
-            salah(a[p] % m, p, a[p]);
-            cout << a[p] << endl;
-        }
+        s += (i - 1) - r.sum(v[i] - 1);
+        r.add(v[i], 1);
     }
+    cout << s << endl;
 }
 
 int main()
 {
     fast;
 
-    solve();
+    ll t;
+    cin >> t;
+    while (t--)
+    {
+        solve();
+    }
 
     return 0;
 }
