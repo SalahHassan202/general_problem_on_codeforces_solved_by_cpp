@@ -10,8 +10,7 @@ using namespace std;
 
 void solve()
 {
-    string s;
-    cin >> s;
+    string s;                       cin >> s;
     cout << s.size();
 }
 
