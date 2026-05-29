@@ -1,13 +1,15 @@
 // A. Odd One Out
+
 #include <iostream>
 # include <string >
 #include <algorithm>
 #include <cmath>
 using namespace std;
+
 int main ()
 {
     
-    int t ;         cin >> t ;
+    int t ;                   cin >> t ;
     while (t--)
     {
         int a , b , c ;        // three number 
@@ -26,8 +28,6 @@ int main ()
             cout<< b << endl;
         }
     }
-
-
     
     return 0 ;
 }
