@@ -1,4 +1,5 @@
 // A. Mountain Scenery
+
 #include <iostream>
 #include <string>
 #include <iomanip>                                  //  setprecision()
@@ -35,7 +36,6 @@ int main()
         {
             ar[i]-- ;
             top--;
-
             if(top == 0)
             {
                 break ;
@@ -47,7 +47,6 @@ int main()
     {
        cout << ar[i] <<" " ; 
     }
-
 
     return 0 ;
 }
