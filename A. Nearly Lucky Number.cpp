@@ -7,7 +7,6 @@
     cin.tie(0);                  \
     cout.tie(0);
 using namespace std;
-
 void solve()
 {
     string s;
@@ -23,13 +22,11 @@ void solve()
     bool lucky = true;
     if (cnt == 0)
         lucky = false;
-
     for (char c : n)
     {
         if (c != '4' && c != '7')
             lucky = false;
     }
-
     cout << (lucky ? "YES" : "NO");
 }
 int main()
