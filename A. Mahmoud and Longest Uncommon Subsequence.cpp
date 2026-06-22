@@ -1,4 +1,5 @@
 // A. Mahmoud and Longest Uncommon Subsequence
+
 #include <iostream>
 #include <string >
 #include <algorithm>
@@ -11,13 +12,11 @@ int find_uncommon_subsequence_length( string a , string b)
     {
         return -1; // No uncommon subsequence
     }
-
     return max(a.length(), b.length());
 }
 
 int main()
 {
-
     /*
 
 	abc 
@@ -35,10 +34,7 @@ int main()
 	
 	*/
 
-
-    string a, b;
-    cin >> a >> b;
-
+    string a, b;             cin >> a >> b;
     int result = find_uncommon_subsequence_length(a, b);
     cout << result << endl;
 
