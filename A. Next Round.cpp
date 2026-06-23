@@ -1,4 +1,5 @@
 // A. Next Round
+
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -6,7 +7,6 @@
 using namespace std;
 int main()
 {
-
     long long size , position , counter = 0 ;
     cin >> size >> position ;
     long long arr[size] ;
@@ -26,7 +26,6 @@ int main()
             break;
         }
     }
-
     cout<< counter << endl; 
 
     return 0 ;
