@@ -1,4 +1,5 @@
 // A. New Password
+
 #include <iostream>
 #include <string >
 #include <algorithm>
@@ -47,13 +48,11 @@ int main()
 
 
 	int size , symbol ;          cin >> size >> symbol ;
-    
     for(int i = 0 ; i < size ; i++)
     {
         cout<<char( 'a' +(i % symbol)) ;
     }
     
-
     return 0;
 }
 
