@@ -1,4 +1,5 @@
 // A. Polo the Penguin and Segments
+
 #include <iostream>
 #include <string>
 #include <iomanip>                                  //  setprecision()
@@ -42,10 +43,9 @@ int main()
     output is 2 
     
     */
-  
 
-    long long lines , devision ;
-    cin >> lines >> devision ;
+
+    long long lines , devision ;               cin >> lines >> devision ;
     // y - x + 1 =======> the length of line
 
     long long length = 0 ;
@@ -65,7 +65,6 @@ int main()
     {
         cout <<  devision - length <<endl;
     }
-
 
     return 0 ;
 }
