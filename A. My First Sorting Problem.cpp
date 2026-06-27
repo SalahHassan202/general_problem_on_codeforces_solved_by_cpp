@@ -1,4 +1,5 @@
 // A. My First Sorting Problem
+
 #include <iostream>
 #include <string>
 #include <cmath>
@@ -16,7 +17,6 @@ int main()
             cin >>arr[i] ;
         }
         sort(arr , arr+2) ;
-       
         for(int i = 0 ; i <=1 ; i++)
         {
             cout << arr[i] << " " ;
