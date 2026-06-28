@@ -7,14 +7,14 @@ using namespace std ;
 
 void solve()
 {
-    ll n ; cin >> n ; 
+    ll n ;                   cin >> n ; 
     ll k = n+1 ;
     if(k==1)
-    cout << 0 << endl;
+        cout << 0 << endl;
     else if(k%2==0)
-    cout << k/2 << endl;
+        cout << k/2 << endl;
     else
-    cout<< k << endl;
+        cout<< k << endl;
 
 }
 int main()
