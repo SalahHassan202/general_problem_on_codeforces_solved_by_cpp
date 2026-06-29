@@ -1,19 +1,16 @@
 // A. Night at the Museum
+
 #include<iostream>
 #include<string>
 #include <cmath>
 #include<algorithm>
 using namespace std; 
-
 int main()
 {
 	string word ;                  cin >> word ;
-
 	int start = 97 ;        // 'a'  
 	int steps = 0 ;
-
 	// All Alphaptic is 26 char 
-
 	for(int i = 0 ; i < word.size() ; i++)
 	{
 		int result =abs ( word[i] - start );
