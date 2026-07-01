@@ -1,4 +1,5 @@
 // A. Presents
+
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -43,12 +44,12 @@ int main()
 
 	*/
 
-	int size ;          cin >> size ;
+	int size ;                 cin >> size ;
 	int arr[size];
 	for(int i =1 ; i <= size ; i++)
 	{
 		// make frequancy array 
-		int val ;      cin >> val ;           // value
+		int val ;            cin >> val ;           // value
 		arr[val] = i ;
 	}
 
@@ -56,7 +57,6 @@ int main()
 	{
 		cout<<arr[i]<<" ";
 	}
-
     
     return 0 ;
 }
