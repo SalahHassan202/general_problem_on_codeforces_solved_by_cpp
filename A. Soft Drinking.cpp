@@ -1,4 +1,5 @@
 // A. Soft Drinking
+
 #include <bits/stdc++.h>
 #define ll long long
 #define fast                     \
