@@ -1,4 +1,5 @@
 // A. Magnets
+
 #include<iostream>
 #include<string>
 #include<algorithm>
@@ -6,9 +7,8 @@ using namespace std;
 int main()
 {
 
-	int num , counter = 1 ;         cin >> num ;
+	int num , counter = 1 ;                  cin >> num ;
 	int arr[100000];        // given in problem =====>     n (1 ≤ n ≤ 100000)
-
 	for(int i =0 ; i < num ; i++)
 	{
 		cin>> arr[i] ; 
@@ -23,8 +23,6 @@ int main()
 	}
 
 	cout<<counter <<endl;
-   
-
 
 	return 0;
 }
