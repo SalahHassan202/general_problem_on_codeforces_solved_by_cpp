@@ -1,4 +1,5 @@
 // A. Sum of Round Numbers
+
 #include <bits/stdc++.h>
 #define ll long long
 #define fast                     \
@@ -9,8 +10,7 @@ using namespace std;
 
 void solve()
 {
-    ll n;
-    cin >> n;
+    ll n;                 cin >> n;
     vector<ll> parts;
     ll power = 1;
     while (n > 0)
@@ -31,8 +31,7 @@ int main()
 {
     fast;
 
-    ll t = 1;
-    cin >> t;
+    ll t = 1;          cin >> t;
     while (t--)
     {
         solve();
