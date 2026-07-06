@@ -1,4 +1,5 @@
 // A. Police Recruits
+
 #include<iostream>
 #include<string>
 #include <cmath>
@@ -34,7 +35,6 @@ int main()
 	for(int i = 0 ; i< size ; i++)
 	{
 		int num ;          cin >> num ;
-
 		if(num == -1)
 		{
 			if(police > 0)
@@ -50,11 +50,9 @@ int main()
 		{
 			police+=num;    // police = police + num ;
 		}
-
 	}
 
 	cout << crimes << endl;
-
 	
 	return 0;
 }
