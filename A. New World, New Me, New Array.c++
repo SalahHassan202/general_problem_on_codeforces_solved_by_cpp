@@ -1,11 +1,12 @@
 // A. New World, New Me, New Array
+
 #include<bits/stdc++.h>
 #define ll long long
 using namespace std ;
+
 void solve()
 {
-    ll n , k , p ; 
-    cin >> n >> k >> p ;
+    ll n , k , p ;              cin >> n >> k >> p ;
     ll mx = n*p ; 
     ll mn = -n*p ;
 
@@ -24,7 +25,7 @@ int main()
     // fast code
     ios::sync_with_stdio(false),cout.tie(NULL),cin.tie(0);
     
-   ll t ; cin >>t ;
+   ll t ;                cin >>t ;
    while(t--)
    {
         solve();
