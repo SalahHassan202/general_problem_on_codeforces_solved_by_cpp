@@ -1,4 +1,5 @@
 // A. Snacktower
+
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -83,10 +84,8 @@ int main()
    long long max = snakes ;             // max = size ;
    for(int i =0 ; i < snakes ; i++)
    {
-        long long num ;
-        cin >> num ;
+        long long num ;               cin >> num ;
         ferquancyArray[num] = 1 ; // 3 2 1   ===>  ferquancyArray[3] = 1 ;   ferquancyArray[1] = 1 ; ferquancyArray[2] = 1 ;
-
         while(ferquancyArray[max])       // ferquancyArray[max] == 1          // true     // ferquancyArray[max] == 0      // false
         {
             cout<< max << " " ;
@@ -94,10 +93,7 @@ int main()
         }
         cout<< endl;
 
-
    }
-
-
     
     return 0 ;
 }
