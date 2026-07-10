@@ -5,11 +5,11 @@
 using namespace std ;
 void solve()
 {
-   ll t , n ;   cin  >> t >> n ;
+   ll t , n ;            cin  >> t >> n ;
    if(t>= n)
-   cout << "Passed :)"<<endl;
+       cout << "Passed :)"<<endl;
    else
-   cout<< "Failed :("<<endl;
+       cout<< "Failed :("<<endl;
 }
 int main()
 {
@@ -23,6 +23,5 @@ int main()
         solve();
     }
   
-    
     return 0 ;
 }
