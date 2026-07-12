@@ -1,25 +1,21 @@
 // A. Short Sort
+
 #include <iostream>
 using namespace std;
 int main()
 {
- int t ;  // test cases
- cin>>t ;
-
-
-
+ int t ;                    cin>>t ;
 while(t--)
 {
- string result ;
- cin>>result ;
+ string result ;                  cin>>result ;
 
  if (result[0]=='a' |result[1]=='b' || result[2]=='c' )
  {
-  cout<<"YES"<<endl;
+      cout<<"YES"<<endl;
  }
  else
  {
-  cout<<"NO"<<endl;
+      cout<<"NO"<<endl;
  }
 
 }
