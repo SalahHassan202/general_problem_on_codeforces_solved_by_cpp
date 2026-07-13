@@ -1,10 +1,10 @@
 // A. Puzzles
+
 #include <iostream>
 #include <cmath>
 #include <algorithm>
 #include <string>
 using namespace std;
-
 int main ()
 {
     /*
@@ -31,8 +31,7 @@ int main ()
     10 10 12 22         ==> difference between the latest and bigest number is ==> 22 - 10 = 12         ( refused )  
     */
    
-   int student , puzzles;
-   cin >> student >> puzzles ;
+   int student , puzzles;               cin >> student >> puzzles ;
    int arr[puzzles] ;
 
    for(int i = 0 ; i< puzzles ; i++)
@@ -51,7 +50,6 @@ int main ()
             res = arr[i+student-1] - arr[i] ;
         }
    }
-
    cout<< res << endl;
 
     return 0;
