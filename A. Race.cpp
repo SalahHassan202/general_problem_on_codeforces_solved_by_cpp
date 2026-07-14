@@ -11,7 +11,6 @@ void solve()
     cin>>v[i] ;
   }
   sort(v.begin() , v.end());
-
   cout<<v[0] <<endl;
 }
 int main()
@@ -25,7 +24,6 @@ int main()
     {
         solve();
     }
-  
     
     return 0 ;
 }
