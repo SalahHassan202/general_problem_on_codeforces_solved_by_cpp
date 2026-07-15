@@ -1,4 +1,5 @@
 // A. Shaass and Oskols
+
 #include <iostream>
 #include <string >
 #include <algorithm>
@@ -35,7 +36,7 @@ int main()
 
     */
 
-   int size ;           cin >> size ;
+   int size ;                  cin >> size ;
    int arr[size];
    for(int i = 0 ; i< size ; i++)
    {
@@ -45,7 +46,6 @@ int main()
    cin >> kill ;
 
    int boxNum , bird ;
-
    for(int i = 0 ; i< kill ; i++)
    {
         cin >> boxNum >> bird ;
@@ -58,7 +58,6 @@ int main()
    {
         cout<< arr[i] << endl;
    }
- 
 
     return 0;
 }
