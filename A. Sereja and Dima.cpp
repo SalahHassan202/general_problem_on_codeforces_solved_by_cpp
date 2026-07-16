@@ -1,4 +1,5 @@
 // A. Sereja and Dima
+
 #include<iostream>
 #include<string>
 #include <cmath>
@@ -38,8 +39,6 @@ int main()
 	// if the game is even ===> x1 play the game and take a number 
 	// if the game is odd  ===> x2 play the game and take a number 
 
-
-
 	while(start <= end )    // true 
 	{
 		if(arr[start] >= arr[end])
@@ -63,12 +62,8 @@ int main()
 		}
 		game++;
 	}
-
 	 cout<< player1 << " " << player2 << endl;
-
-
-
-
+	
 	return 0;
 }
 
