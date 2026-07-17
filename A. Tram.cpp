@@ -1,4 +1,5 @@
 // A. Tram
+
 #include <bits/stdc++.h>
 #define ll long long
 #define fast                     \
@@ -15,8 +16,7 @@ void solve()
     // Stop 4: 4 exit, 0 enter ==> current = 0
     // Max = 6 ==> answer = 6
 
-    ll t;
-    cin >> t;
+    ll t;            cin >> t;
     ll a, b;
     ll cur = 0, ans = 0;
     for (int i = 0; i < t; i++)
