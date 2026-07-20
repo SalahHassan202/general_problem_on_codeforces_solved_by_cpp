@@ -1,4 +1,5 @@
 // A. To My Critics
+
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -6,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    long long  t ;      cin >> t ;
+    long long  t ;          cin >> t ;
     long long a , b , c ;             // three numbers 
     while (t--)
     {
@@ -20,7 +21,6 @@ int main()
             cout<<"NO"<<endl;
         }
     }
-
 
     return 0;
 }
