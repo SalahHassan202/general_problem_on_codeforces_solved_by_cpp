@@ -1,4 +1,5 @@
 // B. Upscaling
+
 #include <iostream>
 #include <string>
 #include <iomanip>                                  //  setprecision()
@@ -13,7 +14,6 @@ int main()
     while(t--)
     {
         cin >> num ;
-
         for(int i = 0 ; i <  num ; i++)
         {
             for(int j = 0 ; j <  num ; j++)
@@ -41,13 +41,8 @@ int main()
                 }
             }
             cout << endl; 
-
         }
-
-        
     }
-  
-
 
     return 0 ;
 }
