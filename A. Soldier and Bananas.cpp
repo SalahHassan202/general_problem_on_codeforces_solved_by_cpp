@@ -1,4 +1,5 @@
 // A. Soldier and Bananas
+
 #include<iostream>
 #include<string>
 #include<algorithm>
@@ -25,8 +26,7 @@ int main()
 
 	*/
 
-	int k , n ,w , sum = 0 ;
-	cin>> k >> n >> w ;
+	int k , n ,w , sum = 0 ;              cin>> k >> n >> w ;
 	// i wan t to know the price of all banana and sub it from the money that soldiar has .
 	for(int i =1 ; i <= w ; i++)
 	{
