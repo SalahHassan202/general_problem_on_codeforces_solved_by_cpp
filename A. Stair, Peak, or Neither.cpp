@@ -1,4 +1,5 @@
 // A. Stair, Peak, or Neither?
+
 #include <iostream>
 #include <string>
 #include <iomanip>                                  //  setprecision()
@@ -13,7 +14,6 @@ int main()
     while(t--)
     {
         cin >> a >> b >> c ;
-
         if((a < b) && (b < c) )
         {
             cout << "STAIR" << endl;
@@ -26,9 +26,7 @@ int main()
         {
             cout << "NONE" << endl;
         }
-
     }
-
 
     return 0 ;
 }
