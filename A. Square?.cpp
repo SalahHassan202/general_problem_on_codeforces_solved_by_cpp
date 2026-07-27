@@ -1,4 +1,5 @@
 // A. Square?
+
 #include <bits/stdc++.h>
 #define ll long long
 #define fast                     \
@@ -9,8 +10,7 @@ using namespace std;
 
 void solve()
 {
-    ll a, b, c, d;
-    cin >> a >> b >> c >> d;
+    ll a, b, c, d;                cin >> a >> b >> c >> d;
     if (a == b && a == c && a == d)
         cout << "YES" << endl;
     else
@@ -21,8 +21,7 @@ int main()
 {
     fast;
 
-    ll t = 1;
-    cin >> t;
+    ll t = 1;            cin >> t;
     while (t--)
     {
         solve();
