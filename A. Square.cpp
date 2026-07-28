@@ -1,4 +1,5 @@
 // A. Square
+
 #include <iostream>
 #include <string >
 #include <algorithm>
@@ -8,7 +9,7 @@ using namespace std;
 int main()
 {
 
-    long long t;      cin >> t ;     //  testCases;
+    long long t;                cin >> t ;     //  testCases;
     long long  x1 , y1 , x2 , y2 , x3 , y3 , x4 , y4 ;
     long long length = 0 ;
     while(t--)
@@ -25,7 +26,6 @@ int main()
         */
         length = max(abs(x1 - x2) , abs (y1 - y2)) ;
         cout << (length * length )  << endl;
-        
     }
 
     return 0;
