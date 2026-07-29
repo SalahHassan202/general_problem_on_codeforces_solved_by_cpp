@@ -1,4 +1,5 @@
 // A. Stones on the Table
+
 #include<iostream>
 #include<string>
 #include <cmath>
@@ -16,9 +17,7 @@ int main()
 		{
 			counter++; 
 		}
-
 	}
-
 	cout<< counter << endl;
 
 	return 0;
