@@ -1,4 +1,5 @@
 // A. Supermarket
+
 #include <iostream>
 #include <string>
 #include <iomanip>                                //  setprecision()
@@ -9,7 +10,6 @@ int main()
 {
 
     /*
-    
     Explanation :
     You want to buy 5 kilos of apples. In the first supermarket, the cost for 1 kilo is 1/2 yuan, 
     in the second supermarket, it's 3/4 yuan, and in the third supermarket, it's 1/3 yuan. To minimize the cost, 
@@ -37,7 +37,6 @@ int main()
         {
             temp = result ;
         }
-    
     }
     cout << fixed << setprecision(8) <<  temp * m << endl;
 
