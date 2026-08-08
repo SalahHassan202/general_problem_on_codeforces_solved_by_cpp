@@ -1,4 +1,5 @@
 // A. Word
+
 #include<iostream>
 #include<string>
 #include <cmath>
@@ -20,7 +21,6 @@ int main()
 		{
 			counter_AZ++;
 		}
-
 	}
 
 	char finalResult ;
@@ -53,8 +53,6 @@ tolower()       ===>  convert  the string to lower case
 toupper()       ===>  convert  the string to upper case 
 ==============================================================
 */
-
-
 
 	return 0;
 }
