@@ -1,4 +1,5 @@
 // A. Wrong Subtraction
+
 #include <bits/stdc++.h>
 #define ll long long
 #define fast                     \
@@ -9,8 +10,7 @@ using namespace std;
 
 void solve()
 {
-    ll n, k;
-    cin >> n >> k;
+    ll n, k;             cin >> n >> k;
     while (k--)
     {
         if (n % 10 != 0)
