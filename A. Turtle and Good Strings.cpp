@@ -7,9 +7,8 @@ using namespace std ;
 
 void solve()
 {
-    ll n ; cin >> n ;
-    string s ; cin >> s ;
-    
+    ll n ;                cin >> n ;
+    string s ;                 cin >> s ;
     for(int i= 0; i<n; i++)
     {
         if(s[i]!=s[n-i-1])
@@ -29,13 +28,11 @@ int main()
 {
     fast;
     
-    ll t = 1 ;
-    cin >> t ;
+    ll t = 1 ;                             cin >> t ;
     while(t--)
     {
         solve();
     }
-  
     
     return 0 ;
 }
