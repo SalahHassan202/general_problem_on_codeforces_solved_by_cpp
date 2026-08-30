@@ -1,4 +1,5 @@
 // A. Team Olympiad
+
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -48,9 +49,7 @@ int main()
     */
 
     int size ;              cin >> size ;
-    
     int a1 = 0 , a2 = 0 , a3 = 0 ;
-
     for(int i =1 ; i<= size ; i++)  //  i deal with position not index ===> so that i started (i) from 1 
     {
         int num ;              cin >> num ;
@@ -72,9 +71,7 @@ int main()
     }
 
     int number_of_teams = min({a1 , a2 , a3}) ;
-
     cout<< number_of_teams << endl;
-
     for(int i = 0 ; i < number_of_teams ; i++)
     {
         cout<< arr1[i] <<" "<<arr2[i] <<" "<<arr3[i]<<endl;
