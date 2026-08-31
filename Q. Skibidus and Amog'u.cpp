@@ -5,26 +5,22 @@
 using namespace std ;
 void solve()
 {
-    string s ; cin >> s ;
+    string s ;               cin >> s ;
     for(int i =0;i<s.size()-2 ; i++)
     {
         cout << s[i];
     }
     cout<< "i" << endl;
-
 }
 int main()
 {
     // fast code
     ios::sync_with_stdio(false),cout.tie(NULL),cin.tie(0);
-    
-    ll t = 1 ;
-    cin>> t ;
+    ll t = 1 ;                    cin>> t ;
     while(t--)
     {
         solve();
     }
-  
     
     return 0 ;
 }
