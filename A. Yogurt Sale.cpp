@@ -1,4 +1,5 @@
 // A. Yogurt Sale
+
 #include <iostream>
 #include <string>
 #include <iomanip>                                  //  setprecision()
@@ -23,10 +24,8 @@ int main()
         {
             cout << ans << endl;
         }
-
     }
 
-    
 
     return 0 ;
 }
