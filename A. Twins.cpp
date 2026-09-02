@@ -1,4 +1,5 @@
 // A. Twins
+
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -38,10 +39,9 @@ int main()
    i want the minimum coins to get the biger than his brother 
    
    */
-    int coins ;          cin >> coins  ;               // size ;
+    int coins ;              cin >> coins  ;               // size ;
     int arr[coins] ;
     long long sum  = 0 ;
-
     for(int i  = 0 ; i < coins  ; i++)
     {
         cin >> arr[i] ;
@@ -50,13 +50,10 @@ int main()
 
     // sorting array 
     sort(arr , arr + coins) ;
-
     long long result = 0 ;
     long long counter = 0 ;
-
     for(int i = coins - 1 ; i>=0 ; i--)    // coins - 1   ==> because array start from zero index
     {
-
         result+=arr[i] ;
         counter++;
         if(result > (sum/2))
