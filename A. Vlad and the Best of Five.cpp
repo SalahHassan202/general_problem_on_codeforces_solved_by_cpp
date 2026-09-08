@@ -1,4 +1,5 @@
 // A. Vlad and the Best of Five
+
 #include iostream
 #include string
 #include iomanip                                  setprecision()
@@ -32,10 +33,8 @@ int main()
         {
              cout  B  endl;
         }
-
         counterA = 0 , counterB = 0 ;
     }
   
-
     return 0 ;
 }
