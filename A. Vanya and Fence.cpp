@@ -1,4 +1,5 @@
 // A. Vanya and Fence
+
 #include <iostream>
 #include <cmath>
 #include <algorithm>
@@ -29,7 +30,6 @@ int main ()
    while(no_of_girls--)
    {
         cin >> num ; 
-        
         if(num <= hight)
         {
             res++ ;
@@ -38,11 +38,9 @@ int main ()
         {
             res+=2 ; 
         }
-        
    }
 
     cout<< res << endl;
-
 
     return 0;
 }
