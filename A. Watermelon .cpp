@@ -1,12 +1,11 @@
 // A. Watermelon 
-
+// This is my first code at codeforces
 #include <iostream>
 using namespace std;
 int main()
 {
 
-int w ;
-cin>>w ;
+int w ;       cin>>w ;
 if(w%2==0 && w>2)
 {
     cout<< "YES"<<endl;
@@ -14,7 +13,7 @@ if(w%2==0 && w>2)
 else
 {
     cout<< "NO"<<endl;
-
 }
+    
 return 0;
 }
