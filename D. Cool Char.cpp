@@ -1,4 +1,5 @@
 // D. Cool Char
+
 #include <bits/stdc++.h>
 #define ll long long
 #define fast                     \
@@ -9,8 +10,7 @@ using namespace std;
 
 void solve()
 {
-    char c;
-    cin >> c;
+    char c;           cin >> c;
     ll ans = c;
     if (ans % 2 == 0)
         cout << "even";
