@@ -5,12 +5,9 @@
 using namespace std ;
 void solve()
 {
-    double x , y , z ; 
-    cin >> x >> y >> z ;
+    double x , y , z ;             cin >> x >> y >> z ;
     double res = ((2*x) + (3*y))*(5*z) ;
     cout << fixed <<setprecision(6)<< res << endl;
-
-
 }
 int main()
 {
@@ -23,7 +20,6 @@ int main()
     {
         solve();
     }
-  
-    
+
     return 0 ;
 }
