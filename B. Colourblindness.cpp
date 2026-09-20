@@ -4,11 +4,10 @@
 #define ll long long
 #define fast ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 using namespace std ;
-
 void solve()
 {
-    ll n ; cin >> n ;
-    string s1 , s2 ;     cin >> s1 >> s2 ;
+    ll n ;                        cin >> n ;
+    string s1 , s2 ;               cin >> s1 >> s2 ;
     for(int i =0;i<n ; i++)
     {
         if(s1[i] == 'R')
@@ -18,7 +17,6 @@ void solve()
                 cout << "NO" << endl;
                 return;
             }
-            
         }
         else
         {
@@ -27,24 +25,19 @@ void solve()
                 cout<< "NO" << endl;
                 return ;
             }
-            
         }
-       
     }
      cout << "YES"<< endl;
-   
 }
 int main()
 {
     fast;
     
-    ll t = 1 ;
-    cin >> t ;
+    ll t = 1 ;                        cin >> t ;
     while(t--)
     {
         solve();
     }
-  
     
     return 0 ;
 }
