@@ -12,7 +12,6 @@ int main ()
         cin >> word ;
         // Convert the string to lowercase
         transform(word.begin(), word.end(), word.begin() , ::tolower);
-
         if( word == "yes" )
         {
             cout<<"YES"<<endl;
