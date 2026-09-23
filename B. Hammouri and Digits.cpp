@@ -1,12 +1,11 @@
 // B. Hammouri and Digits
 
-
 #include<bits/stdc++.h>
 #define ll long long
 using namespace std ;
 void solve()
 {
-  string s ; cin >> s ;
+  string s ;           cin >> s ;
   string res ="";
   ll cnt = 0 ;
   for(int i = s.size()-1 ; i >= 0 ; i--) 
@@ -17,7 +16,6 @@ void solve()
     {
       res +="," ;
     }
-
   }
   reverse(res.begin() , res.end()) ;
   cout << res <<endl;
@@ -33,7 +31,6 @@ int main()
     {
         solve();
     }
-  
     
     return 0 ;
 }
