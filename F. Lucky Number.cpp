@@ -1,4 +1,5 @@
 // F. Lucky Number
+
 #include <bits/stdc++.h>
 #define ll long long
 #define fast                     \
@@ -9,8 +10,7 @@ using namespace std;
 
 void solve()
 {
-    ll n;
-    cin >> n;
+    ll n;                       cin >> n;
     ll mx = 0, mn = 9;
     while (n > 0)
     {
