@@ -1,4 +1,5 @@
 // C. Can I Square?
+
 #include <iostream>
 # include <string >
 #include <algorithm>
@@ -8,7 +9,6 @@ int main ()
 {
     long long t ;            cin >> t ;
     long long sum = 0 ;
-   
     while(t--)
     {
         long long  size ;             cin >> size ;
@@ -27,11 +27,8 @@ int main ()
         {
             cout<<"NO"<<endl;
         }
-
         sum = 0 ;
     }
-
-
     
     return 0 ;
 }
