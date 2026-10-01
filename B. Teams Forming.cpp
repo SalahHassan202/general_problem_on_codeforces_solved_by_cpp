@@ -1,4 +1,5 @@
 // B. Teams Forming
+
 #include<iostream>
 #include<string>
 #include<algorithm>
@@ -38,28 +39,22 @@ int main()
     teams 
     (1,100) 
     output is 100 - 1 = 99
-
-    
     */
 
-   int number_of_people , skills ;
-   cin >> number_of_people ;
+    int number_of_people , skills ;
+    cin >> number_of_people ;
     int arr[number_of_people] ;
-
    for (int i = 0; i < number_of_people ; i++ )
     {
 		cin >> arr[i];
     }
 
     sort(arr , arr+number_of_people) ;
-    
     int res = 0;
-
 	for (int i = 0 ; i < number_of_people ; i += 2 )
     {
 		res += arr[i + 1] - arr[i];
 	}
-	
 	cout << res << endl;
     
     return 0;
