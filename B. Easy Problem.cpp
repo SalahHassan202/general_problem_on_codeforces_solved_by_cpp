@@ -5,12 +5,10 @@
 using namespace std ;
 void solve()
 {
-    string a, b;
-    cin >> a >> b;
-
+    string a, b;               cin >> a >> b;
     int x = (a.back() - '0');
     int y = (b.back() - '0');
-
+    
     if ((x + y) % 2 == 0)
         cout << "Even." << endl;
     else
@@ -28,6 +26,5 @@ int main()
         solve();
     }
   
-    
     return 0 ;
 }
