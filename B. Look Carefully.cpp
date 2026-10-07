@@ -3,19 +3,13 @@
 #include<bits/stdc++.h>
 #define ll long long
 using namespace std ;
-
-
 void solve()
 {
-    char a;
-    cin >> a; 
-    
+    char a;                     cin >> a; 
     if (a == 'C' || a == 'h' || a == 'i') 
         cout << "Yes\n";
      else 
         cout << "No\n";
-    
-
 }
 int main()
 {
@@ -24,6 +18,5 @@ int main()
  
     solve();
    
-    
     return 0 ;
 }
