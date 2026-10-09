@@ -5,11 +5,11 @@
 using namespace std ;
 void solve()
 {
-    ll n ; cin>>n ;
+    ll n ;                    cin>>n ;
     double sum = 0 ;
     for(int i =0;i<n ;i++)
     {
-        ll x ; cin >> x ;
+        ll x ;                cin >> x ;
         sum+=x;
     }
     double avg = sum/n ;
@@ -26,7 +26,6 @@ int main()
     {
         solve();
     }
-  
     
     return 0 ;
 }
