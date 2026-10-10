@@ -1,4 +1,5 @@
 // B. Pong Ping
+
 #include <bits/stdc++.h>
 #define ll long long
 #define fast                     \
@@ -10,8 +11,7 @@ using namespace std;
 void solve()
 {
 
-    ll a, b;
-    cin >> a >> b;
+    ll a, b;               cin >> a >> b;
     ll s = a + b;
     ll p = s / 2;
     if (p % 2 == 0)
