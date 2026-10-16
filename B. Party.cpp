@@ -10,9 +10,7 @@ using namespace std;
 
 void solve()
 {
-    ll n, m, l, r;
-    cin >> n >> m >> l >> r;
-
+    ll n, m, l, r;             cin >> n >> m >> l >> r;
     if ((l * r) >= (n + m))
         cout << "Yes";
     else
