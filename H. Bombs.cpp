@@ -1,4 +1,5 @@
 // H. Bombs
+
 #include <bits/stdc++.h>
 #define ll long long
 #define fast                     \
@@ -10,8 +11,7 @@ using namespace std;
 void solve()
 {
 
-    ll r, c;
-    cin >> r >> c;
+    ll r, c;            cin >> r >> c;
     vector<string> g(r);
     for (int i = 0; i < r; i++)
     {
