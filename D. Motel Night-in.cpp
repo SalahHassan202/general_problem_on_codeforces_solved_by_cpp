@@ -1,4 +1,5 @@
 // D. Motel Night-in
+
 #include <bits/stdc++.h>
 #define ll long long
 #define fast                     \
@@ -9,8 +10,7 @@ using namespace std;
 
 void solve()
 {
-    ll d, s;
-    cin >> d >> s;
+    ll d, s;              cin >> d >> s;
     if (3 * s >= 2 * d)
         cout << "Sunny Day";
     else if (3 * s <= d)
