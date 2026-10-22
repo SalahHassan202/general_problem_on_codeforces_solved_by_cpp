@@ -1,4 +1,5 @@
 // C. Hard Problem
+
 #include <bits/stdc++.h>
 #define ll long long
 #define fast                     \
@@ -15,8 +16,7 @@ void solve()
     // Empty seats = (m - 3) + (m - 1) = 0 + 2 = 2
     // monkeys (c) = min(2, 1) = 1 can sit
     // Total = 3 + 1 + 1 = 5 monkeys seated
-    ll m, a, b, c;
-    cin >> m >> a >> b >> c;
+    ll m, a, b, c;                 cin >> m >> a >> b >> c;
     ll ans = 0, freq = 0;
     ans += min(m, a);
     ans += min(m, b);
@@ -30,8 +30,7 @@ int main()
 {
     fast;
 
-    ll t = 1;
-    cin >> t;
+    ll t = 1;                cin >> t;
     while (t--)
     {
         solve();
