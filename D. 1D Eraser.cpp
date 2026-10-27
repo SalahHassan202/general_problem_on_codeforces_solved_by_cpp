@@ -1,11 +1,9 @@
 // D. 1D Eraser
 #include <iostream>
 using namespace std;
-int main(){
-
-    int t ;
-    cin>>t;
-
+int main()
+{
+    int t ;              cin>>t;
     while (t--)
     {
         int n ,k ;   // n ===>the length of the paper ;  k===>the integer used in the operation.
@@ -13,8 +11,6 @@ int main(){
         string s ;  // white or black  && B or W
         cin>>s;
         int ans =0 ;
-
-
         for(int i=0 ; i<n ;i++)
         {
             if(s[i]=='B')  // B (representing a black cell)   &&  W   (representing a white cell).
