@@ -3,15 +3,13 @@
 #include<bits/stdc++.h>
 #define ll long long
 using namespace std ;
-
 void solve()
 {
-    ll x , y , z ; cin >> x >> y >> z ;
+    ll x , y , z ;              cin >> x >> y >> z ;
     if((x+y)> z && (x+z)> y && (y+z)> x)
-    cout<<"YES" << endl;
+        cout<<"YES" << endl;
     else
-    cout<<"NO"<< endl; 
-   
+        cout<<"NO"<< endl; 
 }
 int main()
 {
@@ -24,7 +22,6 @@ int main()
     {
         solve();
     }
-  
     
     return 0 ;
 }
