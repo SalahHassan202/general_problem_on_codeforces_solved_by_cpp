@@ -7,11 +7,9 @@
     cin.tie(0);                  \
     cout.tie(0);
 using namespace std;
-
 void solve()
 {
-    ll n;
-    cin >> n;
+    ll n;              cin >> n;
     // while(n%2==0 && n>1)
     // {
     //     n/=2 ;
