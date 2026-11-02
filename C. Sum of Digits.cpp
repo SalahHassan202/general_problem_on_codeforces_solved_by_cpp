@@ -1,4 +1,5 @@
 // C. Sum of Digits
+
 #include<iostream>
 #include<string>
 #include<algorithm>
@@ -35,15 +36,11 @@ int main()
         {
             // we want to use int instead string so that we use ====>'0'   or    48 
             sum = sum + num[i] -'0' ;
-
         }
         num = to_string(sum) ;     // to_string ===> convert sring to int 
         counter++ ;     // the number of transformation (output)
-
     }
-
     cout<< counter << endl; 
-
 
     return 0;
 }
