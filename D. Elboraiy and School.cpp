@@ -10,8 +10,7 @@ using namespace std;
 
 void solve()
 {
-    ll n;
-    cin >> n;
+    ll n;                cin >> n;
     vector<ll> v(n);
     vector<ll> od, ev;
     for (int i = 0; i < n; i++)
@@ -42,8 +41,7 @@ int main()
 {
     fast;
 
-    ll t = 1;
-    cin >> t;
+    ll t = 1;                cin >> t;
     while (t--)
     {
         solve();
