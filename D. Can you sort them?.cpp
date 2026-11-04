@@ -5,13 +5,10 @@
 using namespace std ;
 void solve()
 {
-    
     vector<ll>v(3) ; 
     for(int i=0;i<3 ;i++) cin>>v[i] ;
     sort(v.begin() , v.end());
     for(int i =0;i<3;i++) cout<<v[i]<<" ";
-
-
 }
 int main()
 {
@@ -24,7 +21,6 @@ int main()
     {
         solve();
     }
-  
     
     return 0 ;
 }
