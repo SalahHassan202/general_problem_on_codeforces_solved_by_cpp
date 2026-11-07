@@ -1,10 +1,10 @@
 // D. Deletions of Two Adjacent Letters
+
 #include <iostream>
 #include <string >
 #include <algorithm>
 #include <cmath>
 using namespace std;
-
 int main()
 {
 
@@ -83,14 +83,12 @@ int main()
     {
         string s ;                 char c ; 
         cin >> s >> c ;
-
         bool valid = false ;   
         for(int j = 0 ; j < s.size() ; j++)
         {
             if(s[j] == c)
             {
                 int next =( s.size() - j - 1) ;
-
                 if (next % 2 == 0)
                 {
                     valid = true ;
