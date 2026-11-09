@@ -7,12 +7,10 @@
     cin.tie(0);                  \
     cout.tie(0);
 using namespace std;
-
 void solve()
 {
 
-    ll a, b;
-    cin >> a >> b;
+    ll a, b;               cin >> a >> b;
     ll mn = min({a * b, a * a, b * b});
     ll mx = max({a * b, a * a, b * b});
     cout << mn << " " << mx << endl;
