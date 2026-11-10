@@ -7,15 +7,10 @@
     cin.tie(0);                  \
     cout.tie(0);
 using namespace std;
-
 void solve()
 {
-    ll n;
-    cin >> n;
-
-    string s;
-    cin >> s;
-
+    ll n;              cin >> n;
+    string s;          cin >> s;
     ll zero = 0, one = 0;
     for (int i = 0; i < n; i++)
     {
@@ -24,13 +19,14 @@ void solve()
         else
             one++;
     }
-
     cout << abs(one - zero) << endl;
 }
 
 int main()
 {
     fast;
+    
     solve();
+    
     return 0;
 }
