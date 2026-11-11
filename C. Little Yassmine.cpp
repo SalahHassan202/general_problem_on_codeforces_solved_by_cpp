@@ -7,11 +7,9 @@
     cin.tie(0);                  \
     cout.tie(0);
 using namespace std;
-
 void solve()
 {
-    ll n;
-    cin >> n;
+    ll n;             cin >> n;
     vector<ll> a(n);
     bool zero = false, neg = false, pos = false;
     ll mxPos = -1e18, mxNeg = -1e18;
