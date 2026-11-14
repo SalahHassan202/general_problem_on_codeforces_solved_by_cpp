@@ -3,19 +3,17 @@
 #include<bits/stdc++.h>
 #define ll long long
 using namespace std ;
-
 void solve()
 {
-  ll a , b , c ;      
-  char s , eq ; 
-  cin >> a >> s >> b >>eq>> c ; 
+    ll a , b , c ;      
+    char s , eq ; 
+    cin >> a >> s >> b >>eq>> c ; 
     ll correct ;
     if (s == '+') correct = a + b;
     else if (s == '-') correct = a - b;
     else if (s == '*') correct = a * b;
-
-    
-   if (correct == c) cout << "Yes\n";
+  
+    if (correct == c) cout << "Yes\n";
     else cout << correct << "\n";
 
 }
@@ -31,6 +29,5 @@ int main()
         solve();
     }
   
-    
     return 0 ;
 }
