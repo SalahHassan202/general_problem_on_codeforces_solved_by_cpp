@@ -10,9 +10,7 @@ using namespace std;
 
 void solve()
 {
-
-    ll n;
-    cin >> n;
+    ll n;            cin >> n;
     vector<ll> a(n);
     for (int i = 0; i < n; i++)
         cin >> a[i];
@@ -27,7 +25,6 @@ void solve()
         if ((i % 2 == 0 && a[i] > 0) || (i % 2 == 1 && a[i] < 0))
             y++;
     }
-
     cout << min(x, y);
 }
 
