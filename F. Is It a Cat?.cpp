@@ -7,14 +7,10 @@
     cin.tie(0);                  \
     cout.tie(0);
 using namespace std;
-
 void solve()
 {
-    ll n;
-    cin >> n;
-    string s;
-    cin >> s;
-
+    ll n;              cin >> n;
+    string s;           cin >> s;
     for (int i = 0; i < s.size(); i++)
     {
         s[i] = tolower(s[i]);
@@ -36,8 +32,7 @@ int main()
 {
     fast;
 
-    ll t = 1;
-    cin >> t;
+    ll t = 1;           cin >> t;
     while (t--)
     {
         solve();
